@@ -1,0 +1,47 @@
+{
+  "name": "movie-systems-design",
+  "version": "1.0.0",
+  "description": "LLM-integrated movie recommendation and analysis system",
+  "main": "middleware/server.ts",
+  "scripts": {
+    "dev:frontend": "cd frontend && tsc --watch",
+    "dev:middleware": "ts-node-dev --respawn --transpile-only middleware/server.ts",
+    "dev": "concurrently \"npm run dev:middleware\" \"npm run dev:frontend\"",
+    "build": "npm run build:middleware && npm run build:frontend",
+    "build:middleware": "tsc -p middleware/tsconfig.json",
+    "build:frontend": "tsc -p frontend/tsconfig.json",
+    "start": "node middleware/dist/middleware/server.js",
+    "start:dev": "npm run dev",
+    "start:with-key": "powershell -ExecutionPolicy Bypass -File scripts/start-with-api-key.ps1",
+    "test:api-key": "node scripts/test-api-key.js",
+    "kill:port": "powershell -ExecutionPolicy Bypass -File scripts/kill-port.ps1"
+  },
+  "keywords": [
+    "movie",
+    "llm",
+    "recommendation",
+    "ai",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "openai": "^4.20.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@types/sqlite3": "^3.1.11",
+    "concurrently": "^8.2.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

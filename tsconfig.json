@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020", "DOM"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["shared/*"],
+      "@database/*": ["database/*"],
+      "@middleware/*": ["middleware/*"]
+    }
+  },
+  "include": ["shared/**/*", "database/**/*", "middleware/**/*"],
+  "exclude": ["node_modules", "frontend"]
+}
+

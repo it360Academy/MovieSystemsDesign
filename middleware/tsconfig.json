@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "../",
+    "types": ["node"],
+    "baseUrl": "../",
+    "paths": {
+      "@shared/*": ["shared/*"],
+      "@database/*": ["database/*"]
+    }
+  },
+  "include": ["**/*.ts", "../shared/**/*.ts", "../database/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
+

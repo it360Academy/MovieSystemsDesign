@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Systems Design - Tester</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Systems Design Tester</h1>
+    
+    <div class="input-section">
+      <label for="prompt">Test Prompt:</label>
+      <textarea id="prompt" rows="4" placeholder="Enter your natural language query..."></textarea>
+      
+      <div class="sample-prompts">
+        <label>Sample Prompts:</label>
+        <div id="samplePrompts"></div>
+      </div>
+      
+      <div class="options">
+        <div class="option-group">
+          <label for="genre">Genre:</label>
+          <input type="text" id="genre" placeholder="e.g., Action">
+        </div>
+        <div class="option-group">
+          <label for="minRevenue">Min Revenue:</label>
+          <input type="number" id="minRevenue" placeholder="e.g., 1000000">
+        </div>
+        <div class="option-group">
+          <label for="minRating">Min Rating:</label>
+          <input type="number" id="minRating" step="0.1" placeholder="e.g., 7.0">
+        </div>
+      </div>
+      
+      <button id="runBtn">Run Query</button>
+    </div>
+    
+    <div id="loading" style="display: none;">Loading...</div>
+    <div id="error" style="display: none;" class="error"></div>
+    <div id="results"></div>
+  </div>
+  
+  <script src="src/app.js"></script>
+</body>
+</html>
+
