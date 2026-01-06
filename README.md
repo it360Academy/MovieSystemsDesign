@@ -73,4 +73,5 @@ Then open `frontend/index.html` in your browser (or serve it via a simple HTTP s
 - Shared types: `shared/types/`
 
 <img width="1477" height="626" alt="image" src="https://github.com/user-attachments/assets/e3d4a020-828c-4fce-a1e0-ff63c4baea44" />
+<img width="1473" height="976" alt="image" src="https://github.com/user-attachments/assets/e1990879-4c57-4a73-a431-fd513c855479" />
 
