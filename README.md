@@ -75,3 +75,7 @@ Then open `frontend/index.html` in your browser (or serve it via a simple HTTP s
 <img width="1477" height="626" alt="image" src="https://github.com/user-attachments/assets/e3d4a020-828c-4fce-a1e0-ff63c4baea44" />
 <img width="1473" height="976" alt="image" src="https://github.com/user-attachments/assets/e1990879-4c57-4a73-a431-fd513c855479" />
 
+Code Snippet for my LLMEnricher class defined a prompt like this:
+<img width="1071" height="568" alt="image" src="https://github.com/user-attachments/assets/ea1c14d4-ac18-4cc7-b80b-df32c6835c4e" />
+
+
